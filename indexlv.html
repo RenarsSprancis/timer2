@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>
+        Timer Website
+    </title>
+    <!-- Bootstrap CSS -->
+    <link href="style.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <meta content="noindex, nofollow" name="robots" />
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+	     Taimeris
+	    </a>
+        <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarNav" data-toggle="collapse" type="button">
+	     <span class="navbar-toggler-icon">
+	     </span>
+	    </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="english">
+	        Angļu
+	       </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="latvian">
+	        Latviešu
+	       </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="russian">
+	        Krievu
+	       </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    </header>
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div id="timer-container">
+                        <h1 id="timer">
+                            15:00
+                        </h1>
+                        <div id="timer-buttons">
+                            <button class="btn btn-primary" id="start-btn">
+	         Starts
+	        </button>
+                            <button class="btn btn-secondary" id="reset-btn">
+            Atiestatīt
+	        </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div id="settings-container">
+                        <h2>
+                            Iestatījumi
+                        </h2>
+                        <div class="form-group">
+                            <label for="work-duration">
+	         Ilgums (minūtes):
+	        </label>
+                            <input class="form-control" id="work-duration" max="60" min="1" type="number" value="25" />
+                        </div>
+                        <div class="form-group">
+                            <label for="break-duration">
+	         Pārtraukuma ilgums (minūtes):
+	        </label>
+                            <input class="form-control" id="break-duration" max="60" min="1" type="number" value="5" />
+                        </div>
+                        <div class="form-group">
+                            <label for="long-break-duration">
+            Garā pārtraukuma ilgums (minūtes):
+	        </label>
+                            <input class="form-control" id="long-break-duration" max="60" min="1" type="number" value="15" />
+                        </div>
+                        <div class="form-group">
+                            <label for="long-break-interval">
+            Garā pārtraukuma intervāls  (pomodoros):
+	        </label>
+                            <input class="form-control" id="long-break-interval" max="10" min="1" type="number" value="4" />
+                        </div>
+                        <div class="form-group">
+                            <label for="language">
+	         Valoda:
+	        </label>
+                            <select class="form-control" id="language">
+	         <option value="en">
+	          Angļu
+	         </option>
+	         <option value="lv">
+	          Latviešu
+	         </option>
+	         <option value="ru">
+	          Krievu
+	         </option>
+	        </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="theme">
+	        Noformējums
+	        </label>
+                            <select class="form-control" id="theme">
+	         <option value="light">
+	          Gaišaijs
+	         </option>
+	         <option value="dark">
+	          Tumšaijs
+	         </option>
+	        </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Bootstrap and jQuery JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
+    </script>
+    <!-- Custom JS -->
+    <script src="backend.js"></script>
+    <!-- labots_strādā_RS -->
+</body>
+
+</html>
